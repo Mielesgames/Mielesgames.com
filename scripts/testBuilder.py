@@ -7,13 +7,13 @@ BuilderVersion = 10
 defaultData = {
     "BuildNumber": 0,
     "JSONVersion": 3,
-    "AngularProjectFolder": "PlayTimeClient",
+    "AngularProjectFolder": "client",
     "BuildDataPath": "src/app/Models/buildData.ts",
-    "AngularDistName": "play-time",
-    "HostToUrl": "https://oldmartijntje.nl",
+    "AngularDistName": "website",
+    "HostToUrl": "https://mielesgames.nl",
     "BuilderMakeBranch": True,
     "MainBranch": "main",
-    "GitRepo": "https://github.com/oldmartijntje/playtime/"
+    "GitRepo": "https://github.com/Mielesgames/Mielesgames.com"
 }
 
 exitMessage = "Press Enter key to exit..."

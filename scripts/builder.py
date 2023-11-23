@@ -14,13 +14,13 @@ try:
     defaultData = {
         "BuildNumber": 0,
         "JSONVersion": 3,
-        "AngularProjectFolder": "PlayTimeClient",
+        "AngularProjectFolder": "client",
         "BuildDataPath": "src/app/Models/buildData.ts",
-        "AngularDistName": "play-time",
-        "HostToUrl": "https://oldmartijntje.nl",
+        "AngularDistName": "website",
+        "HostToUrl": "https://mielesgames.nl",
         "BuilderMakeBranch": True,
         "MainBranch": "main",
-        "GitRepo": "https://github.com/oldmartijntje/playtime/"
+        "GitRepo": "https://github.com/Mielesgames/Mielesgames.com"
     }
 
     current_datetime = datetime.now()
@@ -130,7 +130,7 @@ try:
 
 
         # Define the branch names
-        new_branch_name = f"Build/BuildId_{builder_data['BuildNumber']}_DateTime_{current_datetime.strftime("D%d-%m-%YT%H-%M-%S")}"
+        new_branch_name = f"Build/BuildId_{builder_data['BuildNumber']}_DateTime_{current_datetime.strftime('D%d-%m-%YT%H-%M-%S')}"
         dev_branch_name = defaultData['MainBranch']
 
         # Stage all changes

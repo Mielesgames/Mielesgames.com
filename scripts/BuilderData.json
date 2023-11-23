@@ -1,11 +1,11 @@
 {
-    "BuildNumber": 0,
+    "BuildNumber": 3,
     "JSONVersion": 3,
-    "AngularProjectFolder": "PlayTimeClient",
+    "AngularProjectFolder": "client",
     "BuildDataPath": "src/app/Models/buildData.ts",
-    "AngularDistName": "play-time",
-    "HostToUrl": "https://oldmartijntje.nl",
+    "AngularDistName": "website",
+    "HostToUrl": "https://mielesgames.nl",
     "BuilderMakeBranch": true,
     "MainBranch": "main",
-    "GitRepo": "https://github.com/oldmartijntje/playtime/"
+    "GitRepo": "https://github.com/Mielesgames/Mielesgames.com"
 }
