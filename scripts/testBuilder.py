@@ -28,7 +28,7 @@ try:
     subprocess.run(npm_build_command, shell=True, check=True)
 
     # Build the Angular project
-    ng_build_command = 'ng build --configuration "production" --base-href "https://mielesgames.github.io/Mielesgames.com/"'
+    ng_build_command = 'ng build --configuration "production" --base-href "http://mielesgames.nl"'
     subprocess.run(ng_build_command, shell=True, check=True)
 
     source_index_html = 'dist/website/index.html'
