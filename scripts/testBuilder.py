@@ -3,7 +3,8 @@ import os
 import shutil
 import subprocess
 
-BuilderVersion = 10
+BuilderVersion = 12
+print(f"Builder version: {BuilderVersion}")
 defaultData = {
     "BuildNumber": 0,
     "JSONVersion": 3,
@@ -40,15 +41,16 @@ def create_or_read_builder_data():
     return builder_data
 
 builder_data = create_or_read_builder_data()
+print(f"JSON version: {builder_data['JSONVersion']}")
 
-while os.path.isdir(defaultData['AngularProjectFolder']) == False and len(splitted) > 2:
+while os.path.isdir(builder_data['AngularProjectFolder']) == False and len(splitted) > 2:
     os.chdir("..")
     current_working_directory = os.getcwd()
 
     splitted = current_working_directory.split('\\')
 
 if (len(splitted) == 2 and splitted[1] == ''):
-    print(f"ERROR: {defaultData['AngularProjectFolder']} folder not found")
+    print(f"ERROR: {builder_data['AngularProjectFolder']} folder not found")
     input(exitMessage)
     exit()
 
@@ -61,7 +63,7 @@ try:
     subprocess.run(npm_build_command, shell=True, check=True)
 
     # Build the Angular project
-    ng_build_command = f'''ng build --configuration "production" --base-href "{builder_data['AngularProjectFolder']}"'''
+    ng_build_command = f'''ng build --configuration "production" --base-href "{builder_data['HostToUrl']}"'''
     subprocess.run(ng_build_command, shell=True, check=True)
 
     source_index_html = f'''dist/{builder_data['AngularDistName']}/index.html'''
