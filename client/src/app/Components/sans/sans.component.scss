@@ -1,0 +1,34 @@
+.Sans{
+    height: 200px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.Sans img{
+    height: 40%;
+    max-width: auto;
+    object-fit: contain;
+}
+
+.Sans .Head{
+    margin: -12%;
+    z-index: 5;
+}
+
+.Sans .Body{
+    margin: -15%;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.Sans .Legs{
+    z-index: 3;
+    margin: -14%;
+}
+
+.Sans .SittingLegs{
+    z-index: 3;
+    margin: -13%;
+}

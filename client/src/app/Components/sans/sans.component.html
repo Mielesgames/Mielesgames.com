@@ -1,0 +1,6 @@
+<div class="Sans">
+    <img class="Head" src="assets/Sans/Head.png"/>
+    <img class="Body" src="assets/Sans/Body.png"/>
+    <img *ngIf="pose == 0" (click)="ChangePos(1)" class="Legs" src="assets/Sans/Legs.png"/>
+    <img *ngIf="pose == 1" (click)="ChangePos(0)" class="SittingLegs" src="assets/Sans/LegsSitting.png"/>
+</div>
