@@ -7,6 +7,8 @@ import { HomepageComponent } from './Pages/homepage/homepage.component';
 import { NotFoundPageComponent } from './Pages/not-found-page/not-found-page.component';
 import { FnafComponent } from './Pages/fnaf/fnaf.component';
 import { SansComponent } from './Components/sans/sans.component';
+import { AvatarEditorComponent } from './Pages/avatar-editor/avatar-editor.component';
+import { CharacterComponent } from './Components/character/character.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SansComponent } from './Components/sans/sans.component';
     HomepageComponent,
     NotFoundPageComponent,
     FnafComponent,
-    SansComponent
+    SansComponent,
+    AvatarEditorComponent,
+    CharacterComponent
   ],
   imports: [
     BrowserModule,

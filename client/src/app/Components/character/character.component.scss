@@ -1,0 +1,56 @@
+#Character{
+    width: 200px;
+    height: 400px;
+}
+
+
+#TorsoHolder{
+    display: flex;
+    flex-direction: row;
+    margin-top: -25%;
+}
+
+#Legs{
+    display: flex;
+    flex-direction: row;
+    margin-top: -25%;
+}
+
+#Torso{
+    margin-left: -27%;
+    z-index: 2;
+}
+
+#LeftArm{
+    margin-left: -30%;
+    z-index: 1;
+}
+
+#RightLeg{
+    margin-left: 5%;
+    z-index: 1;
+}
+
+#LeftLeg{
+    margin-left: -13%;
+    z-index: 3;
+}
+
+#RightArm{
+    margin-left: 2%;
+    z-index: 3;
+}
+
+#TorsoHolder, #Legs{
+    margin-left: 4%;
+    height: 35%;
+}
+
+#LeftLeg, #RightLeg, #Torso, #LeftArm, #RightArm{
+    height: 100%;
+}
+
+#Head{
+    height: 25%;
+    z-index: 3;
+}
