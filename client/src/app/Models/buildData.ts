@@ -1,12 +1,12 @@
 export const BuildData: any = {
-        "BuildNumber": 2,
+        "BuildNumber": 4,
         "Branch": "main",
         "BuildedCorrectly": true,
-        "BuilderVersion": 8,
-        "JsonVersion": 2,
+        "BuilderVersion": 10,
+        "JsonVersion": 3,
         "Builder": "Mielesgames",
-        "BuildDate": "22/11/2023: 12:09:15",
-        "LastCommitId": "33976f817aee0b2fa70ac3ad878e029bf68089f6",
-        "LastCommitURL": "https://github.com/oldmartijntje/playtime/commit/33976f817aee0b2fa70ac3ad878e029bf68089f6"
+        "BuildDate": "28/11/2023: 13:59:57",
+        "LastCommitId": "25bc131daa81ea66206db82ed9df3584aca56c99",
+        "LastCommitURL": "https://github.com/Mielesgames/Mielesgames.com/commit/25bc131daa81ea66206db82ed9df3584aca56c99"
     };
         
