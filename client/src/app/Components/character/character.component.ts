@@ -6,11 +6,12 @@ import { ListService } from '../../Services/global-list.service';
   styleUrls: ['./character.component.scss']
 })
 export class CharacterComponent implements OnInit {
-  @Input() HeadID!: number;
-  @Input() LeftArmID!: number;
-  @Input() RightArmID!: number;
-  @Input() LeftLegID!: number;
-  @Input() RightLegID!: number;
+  @Input() HeadFile!: string;
+  @Input() LeftArmFile!: string;
+  @Input() RightArmFile!: string;
+  @Input() LeftLegFile!: string;
+  @Input() RightLegFile!: string;
+  @Input() TorsoFile!: string;
 
   globalList: any[];
 
@@ -26,15 +27,16 @@ export class CharacterComponent implements OnInit {
     this.listService.getGlobalList();
   }
 
-  ngOnInit(): void {
-    var bodyParts =  [
-      [], // Heads
-      [], // Torsos
-      [], // Left Arms
-      [], // Right Arms
-      [], // Left Legs
-      []] // Right Legs
+  updateCharacter(): void{
+    this.getList();
+  }
 
-    
+  ngOnInit(): void {
+    this.HeadFile = "./assets/AvatarItems/Heads/TemplateHead.png";
+    this.LeftArmFile = "./assets/AvatarItems/Left_Arms/TemplateArm.png";
+    this.RightArmFile = "./assets/AvatarItems/Right_Arms/TemplateArm.png";
+    this.LeftLegFile = "./assets/AvatarItems/Left_Legs/TemplateLeg.png";
+    this.RightLegFile = "./assets/AvatarItems/Right_Legs/TemplateLeg.png";
+    this.TorsoFile = "./assets/AvatarItems/Torsos/TemplateTorso.png";
   }
 }

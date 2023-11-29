@@ -2,6 +2,7 @@
 
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { characterPartsList, characterPart } from '../Models/characterParts.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -12,10 +13,25 @@ export class ListService {
   outputSubjectValue$: Observable<number[]> = this.outputSubject.asObservable();
 
 
-  private globalList: any[] = [];
+  private globalList: characterPart[] = characterPartsList;
+  private selectedBodyParts: any[] = [];
+
+  constructor() {
+    for (let index = 0; index < this.globalList.length; index++) {
+      this.globalList[index].id = index;
+    }
+  }
 
   getGlobalList(): any[] {
     return this.globalList;
+  }
+
+  getSelectedBodyParts(): any[]{
+    return this.selectedBodyParts;
+  }
+
+  updateSelectedBodyParts(newList:number[]): void{
+    this.selectedBodyParts = newList;
   }
 
   addToGlobalList(item: any): void {
