@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ListService } from './Services/global-list.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Website';
+  globalList: any[];
+
+  constructor(private listService: ListService) {
+    this.globalList = listService.getGlobalList();
+  }
 }
