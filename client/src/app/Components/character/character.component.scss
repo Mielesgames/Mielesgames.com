@@ -1,6 +1,7 @@
 #Character{
-    width: 200px;
-    height: 400px;
+    width: 170px;
+    aspect-ratio: 1 / 2;
+    padding-bottom: 200%;
 }
 
 
@@ -17,29 +18,34 @@
 }
 
 #Torso{
-    margin-left: -27%;
+    margin-left: -61%;
     z-index: 2;
 }
 
 #LeftArm{
-    margin-left: -30%;
+    margin-left: -60%;
+    margin-top: 5%;
     z-index: 1;
-}
-
-#RightLeg{
-    margin-left: 5%;
-    z-index: 1;
-}
-
-#LeftLeg{
-    margin-left: -13%;
-    z-index: 3;
+    transform: rotate(350deg);
 }
 
 #RightArm{
-    margin-left: 2%;
+    margin-left: -26%;
+    margin-top: 5%;
+    z-index: 3;
+    transform: rotate(10deg);
+}
+
+#RightLeg{
+    margin-left: -18%;
     z-index: 3;
 }
+
+#LeftLeg{
+    margin-left: -63%;
+    z-index: 1;
+}
+
 
 #TorsoHolder, #Legs{
     margin-left: 4%;
