@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: rgba(255, 0, 0, 0.552);
+    width: 90%;
+    min-height: 70%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.banner{
+    display: flex;
+    width: 100%;
+}
+.youtube, .twitch, .twitter, .roblox {
+    display: inline-block;
+    margin: 5px;
+    max-width: fit-content;
+    color: red;
+  }
+
+.youtube::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../assets/Icons/youtube.png);
+    background-size: contain;
+    vertical-align: middle; /* Adjust the vertical alignment */
+}
+.twitter::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../assets/Icons/twitter.png);
+    background-size: 100% 100%;
+    vertical-align: middle; /* Adjust the vertical alignment */
+}
+.twitch::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../assets/Icons/twitch.png);
+    background-size: contain;
+    vertical-align: middle; /* Adjust the vertical alignment */
+}
+.roblox::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../assets/Icons/roblox.png);
+    background-size: contain;
+    vertical-align: middle; /* Adjust the vertical alignment */
+}
+
+.featuredContent{
+    height: 300px;
+}
+
+.videos{
+    height: max-content;
+}

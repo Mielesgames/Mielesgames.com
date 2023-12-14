@@ -1,0 +1,59 @@
+.outerBox{
+    border-radius: 30px;
+    aspect-ratio: 1 / 3;
+    width: fit-content;
+    text-decoration: none;
+}
+.thumbnail{
+    border-radius: 30px;
+    height: 100%;
+    width: fit-content;
+}
+.duration{
+    margin-top: -7%;
+    margin-left: 88%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.511);
+    width: fit-content;
+    position: relative;
+    border-radius: 10px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+.thumbnailHolder{
+    height: 75%;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+.titleHolder{
+    display: flex;
+    height: 25%;
+    flex-direction: row;
+}
+.publisher{
+    width: fit-content;
+    height: 80%;
+}
+
+.uploader{
+    height: 100%;
+}
+
+.videoTitle{
+    height: 5%;
+    font-size: 100%;
+    width: fit-content;
+    color: white;
+    max-width: 90%;
+}
+.uploaderName{
+    color: gray;
+    font-size: 70%;
+    height: 5%;
+    max-width: 90%;
+}
+
+.uploader{
+    border-radius: 1000px;
+}

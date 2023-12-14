@@ -9,6 +9,9 @@ import { FnafComponent } from './Pages/fnaf/fnaf.component';
 import { SansComponent } from './Components/sans/sans.component';
 import { AvatarEditorComponent } from './Pages/avatar-editor/avatar-editor.component';
 import { CharacterComponent } from './Components/character/character.component';
+import { AboutPageComponent } from './Pages/about-page/about-page.component';
+import { YoutubevideoComponent } from './Components/youtubevideo/youtubevideo.component';
+import { RobloxGameComponent } from './Components/roblox-game/roblox-game.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { CharacterComponent } from './Components/character/character.component';
     FnafComponent,
     SansComponent,
     AvatarEditorComponent,
-    CharacterComponent
+    CharacterComponent,
+    AboutPageComponent,
+    YoutubevideoComponent,
+    RobloxGameComponent
   ],
   imports: [
     BrowserModule,
