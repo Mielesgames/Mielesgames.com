@@ -52,8 +52,15 @@
     font-size: 70%;
     height: 5%;
     max-width: 90%;
+    padding: 2%;
 }
 
 .uploader{
     border-radius: 1000px;
+}
+
+.theTitle{
+    display: flex;
+    min-height: fit-content;
+    flex-direction: column;
 }
