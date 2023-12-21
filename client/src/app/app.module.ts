@@ -12,6 +12,7 @@ import { CharacterComponent } from './Components/character/character.component';
 import { AboutPageComponent } from './Pages/about-page/about-page.component';
 import { YoutubevideoComponent } from './Components/youtubevideo/youtubevideo.component';
 import { RobloxGameComponent } from './Components/roblox-game/roblox-game.component';
+import { CustomLinkComponent } from './Components/custom-link/custom-link.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RobloxGameComponent } from './Components/roblox-game/roblox-game.compon
     CharacterComponent,
     AboutPageComponent,
     YoutubevideoComponent,
-    RobloxGameComponent
+    RobloxGameComponent,
+    CustomLinkComponent
   ],
   imports: [
     BrowserModule,

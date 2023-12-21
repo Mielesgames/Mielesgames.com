@@ -58,9 +58,22 @@
 }
 
 .featuredContent{
-    height: 300px;
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    overflow: auto;
 }
 
+.videos,.game, .customURL{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.customURL{
+    height: 100%;
+}
 .videos{
-    height: max-content;
+    height: 100%;
+}
+.game{
+    height: 83%;
 }

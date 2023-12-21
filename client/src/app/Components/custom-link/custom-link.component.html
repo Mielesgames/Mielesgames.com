@@ -1,0 +1,13 @@
+<div class="ItemContainer">
+    <a class="UrlContainer" href="{{WebsiteURL}}">
+        <div class="websiteIconHolder">
+            <h1 class="TypeTag">Website</h1>
+            <img class="WebsiteIcon" src="{{WebsiteIcon}}"/>
+        </div>
+        <h1 class="WebsiteName">{{WebsiteName}}</h1>
+    </a>
+    <a *ngIf="CreatorName || CreatorPfp" class="OwnerURLContainer" href="{{CreatorUrl}}">
+        <img class="CreatorPfp" *ngIf="CreatorPfp" src="{{CreatorPfp}}"/>
+        <h1 class="CreatorName">{{CreatorName}}</h1>
+    </a>
+</div>
