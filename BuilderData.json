@@ -1,5 +1,5 @@
 {
-    "BuildNumber": 0,
+    "BuildNumber": 1,
     "JSONVersion": 3,
     "AngularProjectFolder": "client",
     "BuildDataPath": "src/app/Models/buildData.ts",
